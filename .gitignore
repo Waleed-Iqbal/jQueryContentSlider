@@ -2,3 +2,14 @@
 *.cache
 *.cache
 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.dll
+*.config
+*.pdb
+*.exe
+*.rsp
+*.targets
+*.csproj
+*.user
+*.CopyComplete
+*.cache
+*.user
