@@ -1,9 +1,0 @@
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\bin\jQueryContentSlider.dll.config
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\bin\jQueryContentSlider.dll
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\bin\jQueryContentSlider.pdb
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\obj\Debug\jQueryContentSlider.csprojResolveAssemblyReference.cache
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\obj\Debug\jQueryContentSlider.csproj.CoreCompileInputs.cache
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\obj\Debug\jQueryContentSlider.dll
-D:\Projects In JavaScript & JQuery\03 jQuery Content Slider\jQueryContentSlider\obj\Debug\jQueryContentSlider.pdb
