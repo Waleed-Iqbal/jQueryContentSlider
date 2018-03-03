@@ -6,13 +6,9 @@ var tranisitionSpeed = 500; // milliseconds
 
 var autoSwitch = true; // slides automatically or not
 
-var autoSwitchSpeed = 4000; // milliseconds
+var autoSwitchSpeed = 2000; // milliseconds
 
-$("#slider .slide:nth-child(1)").hide();
 
-$("#slider .slide:nth-child(1)").addClass("active");
-
-$("#slider .slide:nth-child(1)").show();
 
 var oldActiveClass = "oldActive";
 
@@ -20,24 +16,26 @@ var oldActiveClass = "oldActive";
     var slider = $("#slider");
     var htmlMarkup = "";
 
-    for (var i = 2; i <= 4; i++){
+    for (var i = 1; i <=4; i++) {
         htmlMarkup +=
-            "<div class='slide'>                    "
-        + "    <div class='slide-copy'>               "
-        + "        <h2>Slider</h2>                    "
-        + "        <p>Lorem ipsum dolor sit amet</p>  "
-        + "    </div>                                 "
-        + "    <img src='../resources/img" + i + ".jpg' />"
-        + "</div>                                     ";
+            "<div class='slide " + (i === 1 ? "active" : "") + "'>  "
+            + "    <div class='slide-copy'>               "
+            + "        <h2>Slider " + i + "</h2>          "
+            + "        <p>Lorem ipsum dolor sit amet</p>  "
+            + "    </div>                                 "
+            + "    <img src='../resources/img" + i + ".jpg' />"
+            + "</div>                                     ";
     }
+
     slider.append(htmlMarkup);
+}());
 
-}())
+$("#slider .slide").hide(); // hides all content on slider
+$("#slider .slide").first().addClass("active");
+$("#slider .slide").first().show();
 
 
-
-
-$("#next").on("click", function () {
+function showNextContent() {
     $(".active").removeClass("active").addClass(oldActiveClass); // oldActive is the last image shown
     if ($(".oldActive").is(":last-child")) {
         $(".slide").first().addClass("active");
@@ -47,9 +45,10 @@ $("#next").on("click", function () {
     $(".oldActive").removeClass(oldActiveClass);
     $(".slide").fadeOut(tranisitionSpeed);
     $(".active").fadeIn(tranisitionSpeed);
-});
+}
 
-$("#prev").on("click", function () {
+
+function showPreviousContent() {
     $(".active").removeClass("active").addClass(oldActiveClass); // oldActive is the last image shown
     if ($(".oldActive").is(":first-child")) {
         $(".slide").last().addClass("active");
@@ -59,6 +58,13 @@ $("#prev").on("click", function () {
     $(".oldActive").removeClass(oldActiveClass);
     $(".slide").fadeOut(tranisitionSpeed);
     $(".active").fadeIn(tranisitionSpeed);
-});
+}
 
 
+$("#next").on("click", showNextContent);
+$("#prev").on("click", showPreviousContent);
+
+
+if (autoSwitch) {
+    setInterval(showNextContent, autoSwitchSpeed);
+}
