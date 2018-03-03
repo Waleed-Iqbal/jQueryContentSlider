@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,9 +10,24 @@
 </head>
 <body>
 
-    <h1>Welcome Everyone</h1>
-    <a href="#" class="myLink">Click Me</a>
-    
+    <section id="container">
+        <header>
+            <h1>jQuery Content Slider</h1>
+        </header>
+
+        <div id="slider">
+            <div class="slide active">
+                <div class="slide-copy">
+                    <h2>Slider</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <img src="../resources/img1.jpg" />
+            </div>
+        </div>
+        <img class="arrows" src="../resources/leftArrow.jpg" alt="prev" id="prev" />
+        <img class="arrows" src="../resources/rightArrow.jpg" alt="next" id="next" />
+
+    </section>
 
     <script src="../scripts/jquery-3.2.1.min.js"></script>
     <script src="../scripts/script.js"></script>

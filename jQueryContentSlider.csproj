@@ -75,10 +75,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
-    <Content Include="jquery-3.2.1.min.js" />
-    <Content Include="script.js" />
-    <Content Include="styles.css" />
+    <Content Include="resources\img1.jpg" />
+    <Content Include="resources\img2.jpg" />
+    <Content Include="resources\img3.jpg" />
+    <Content Include="resources\img4.jpg" />
+    <Content Include="resources\img5.jpg" />
+    <Content Include="resources\leftArrow.jpg" />
+    <Content Include="resources\rightArrow.jpg" />
+    <Content Include="scripts\jquery-3.2.1.min.js" />
+    <Content Include="scripts\script.js" />
+    <Content Include="styles\styles.css" />
+    <Content Include="views\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
